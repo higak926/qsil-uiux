@@ -5,8 +5,6 @@ export default function Index() {
   const url = "https://k1lan0.deta.dev/";
 
   const getData = () => {
-    console.log(process.env.data);
-
     axios.get(url).then((res) => {
       setData(res.data);
     });
